@@ -1,11 +1,8 @@
-import { Mapa } from './components/mapa/Mapa'
+import Mapa from "./map/Mapa"
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Mapa />
-    </>
+    <Mapa />
   )
 }
 
