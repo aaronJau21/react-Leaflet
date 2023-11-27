@@ -3,6 +3,7 @@ import { useLeafletContext } from "@react-leaflet/core";
 import "@geoman-io/leaflet-geoman-free";
 import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css";
 
+
 const Geoman = () => {
   const context = useLeafletContext();
 
@@ -14,7 +15,6 @@ const Geoman = () => {
       cutPolygon: false,
       drawCircle: false,
       drawCircleMarker: false,
-      position: 'bottomleft',
     });
 
     leafletContainer.pm.setGlobalOptions({ pmIgnore: false });
