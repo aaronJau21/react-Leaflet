@@ -11,9 +11,10 @@ const Geoman = () => {
 
     leafletContainer.pm.addControls({
       drawMarker: false,
-      cutPolygon:false,
+      cutPolygon: false,
       drawCircle: false,
-      drawCircleMarker:false,
+      drawCircleMarker: false,
+      position: 'bottomleft',
     });
 
     leafletContainer.pm.setGlobalOptions({ pmIgnore: false });
