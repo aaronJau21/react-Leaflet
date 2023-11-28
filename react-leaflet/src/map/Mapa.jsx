@@ -15,6 +15,7 @@ import "leaflet/dist/leaflet.css";
 import "./map.css";
 import GeoJson from "./geoJson.json";
 import Geoman from "./components/Geoman";
+import HeaderComponent from "./components/HeaderComponent";
 
 const Mapa = () => {
   const rectangle = [
@@ -69,15 +70,12 @@ const Mapa = () => {
         zoomControl={false}
       >
         <ZoomControl position="bottomright" />
-        <img
+        {/* <img
           src="http://13.59.46.236/img/logo.png"
           alt=""
           className="logoStyle"
-        />
-        {/* <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         /> */}
+       <HeaderComponent />
         {polygons}
         <LayersControl position="topright">
           <LayersControl.Overlay name="Marker with popup">
